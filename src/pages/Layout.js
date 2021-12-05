@@ -4,7 +4,11 @@ import About from "./About";
 import UserForm from "../components/UserForm";
 import UserInfo from "../components/UserInfo";
 
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+
+// *Importing helper functions 
+
+import loggedIn from '../helpers/loggedIn'
 
 const Layout = () => {
   return (
@@ -19,7 +23,14 @@ const Layout = () => {
         <Route exact path="/signin">
           <UserForm />
         </Route>
-        <Route exact path="/user-info/:userId">
+        <Route exact path="/">
+
+          {loggedIn() ? <Redirect to='/user' /> : <Welcome />}
+        </Route>
+        {/* <Route exact path="/user-info/:userId">
+          <UserInfo />
+        </Route> */}
+        <Route exact path="/user">
           <UserInfo />
         </Route>
       </Switch>

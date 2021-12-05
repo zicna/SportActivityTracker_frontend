@@ -1,3 +1,5 @@
+import signUserIn from "../helpers/signUserIn";
+
 const signInURL = "http://localhost:3001/signin";
 
 const signIn = (obj) => {
@@ -9,7 +11,10 @@ const signIn = (obj) => {
     body: JSON.stringify(obj),
   })
     .then((response) => response.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      console.log(data)
+      signUserIn(data)
+    })
     .catch((error) => {
         console.error('error:', error)
     });

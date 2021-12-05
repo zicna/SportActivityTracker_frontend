@@ -1,16 +1,16 @@
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 
 
 const UserInfo = () => {
 
-    const params = useParams()
+    // const params = useParams()
 
-    console.log(params.userId)
+    // console.log(params.userId)
     return(
         <section>
              <h1>User Info</h1>
-             <p>{params.userId}</p>
+             {/* <p>{params.userId}</p> */}
         </section>
        
     )
