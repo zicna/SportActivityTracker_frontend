@@ -11,6 +11,9 @@ const MainHeader = () => {
                     <li>
                         <Link to="/about">About</Link>
                     </li>
+                    <li>
+                        <Link to="/signin">Sign In</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
