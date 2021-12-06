@@ -9,5 +9,9 @@ export const logout = () => {
 }
 
 export const isLogin = () => {
-    localStorage.getItem(USER_ID) ? true : false
+    if(localStorage.getItem(USER_ID)){
+        return true
+    }else {
+        return false
+    }
 }

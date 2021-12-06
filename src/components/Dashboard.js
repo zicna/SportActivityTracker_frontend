@@ -1,8 +1,6 @@
-// import { useParams } from 'react-router-dom'
+import React from 'react'
 
-
-
-const UserInfo = () => {
+const Dashboard = () => {
 
     // const params = useParams()
 
@@ -16,4 +14,4 @@ const UserInfo = () => {
     )
 }
 
-export default UserInfo
+export default Dashboard

@@ -1,4 +1,4 @@
-// import signUserIn from "../utilities/signUserIn";
+import { login } from '../utilities/index'
 
 const signInURL = "http://localhost:3001/signin";
 
@@ -13,7 +13,8 @@ const signIn = (obj) => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
-      // signUserIn(data)
+      login(data)
+      // < Redirect to='/dashboard' />
     })
     .catch((error) => {
         console.error('error:', error)
