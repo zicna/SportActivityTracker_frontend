@@ -1,4 +1,4 @@
-import signUserIn from "../helpers/signUserIn";
+// import signUserIn from "../utilities/signUserIn";
 
 const signInURL = "http://localhost:3001/signin";
 
@@ -13,7 +13,7 @@ const signIn = (obj) => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
-      signUserIn(data)
+      // signUserIn(data)
     })
     .catch((error) => {
         console.error('error:', error)

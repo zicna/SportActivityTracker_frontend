@@ -8,12 +8,14 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 // *Importing helper functions 
 
-import loggedIn from '../helpers/loggedIn'
 
 const Layout = () => {
   return (
     <div>
       <Switch>
+        <Route path="/" exact>
+          <Redirect to='/welcome' />
+        </Route>
         <Route exact path="/welcome">
           <Welcome />
         </Route>
@@ -23,10 +25,10 @@ const Layout = () => {
         <Route exact path="/signin">
           <UserForm />
         </Route>
-        <Route exact path="/">
+        {/* <Route exact path="/">
 
           {loggedIn() ? <Redirect to='/user' /> : <Welcome />}
-        </Route>
+        </Route> */}
         {/* <Route exact path="/user-info/:userId">
           <UserInfo />
         </Route> */}
