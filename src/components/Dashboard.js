@@ -1,17 +1,19 @@
 import React from 'react'
 
-const Dashboard = () => {
+class Dashboard extends React.Component {
 
-    // const params = useParams()
+    componentDidMount(){
+        
+    }
 
-    // console.log(params.userId)
-    return(
-        <section>
-             <h1>User Info</h1>
-             {/* <p>{params.userId}</p> */}
-        </section>
-       
-    )
+    render(){
+        return(
+            <section>
+                 <h1>User Info</h1>
+                 {/* <p>{params.userId}</p> */}
+            </section>
+        )
+    }
 }
 
 export default Dashboard

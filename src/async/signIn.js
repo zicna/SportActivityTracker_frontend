@@ -14,10 +14,9 @@ const signIn = (obj) => {
     .then((data) => {
       console.log(data)
       login(data)
-      // < Redirect to='/dashboard' />
     })
-    .catch((error) => {
-        console.error('error:', error)
+    .catch(() => {
+        console.log('something went wrong :(')
     });
 };
 

@@ -15,7 +15,9 @@ class UserForm extends React.Component {
         // *here we are calling imported fetch function
         const userObj = this.state
         signIn(userObj)
-        
+        //! now if user is logged in we will redirect?
+
+        // * reset the local state
         this.setState({
             email:'',
             password:''
