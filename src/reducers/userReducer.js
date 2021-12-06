@@ -1,4 +1,4 @@
-export default function user(state={email:'',password: ''}, action){
+function userReducer(state={email:'',password: ''}, action){
     switch(action.type){
         case 'ADD_USER':
             return {
@@ -8,3 +8,5 @@ export default function user(state={email:'',password: ''}, action){
             return state
     }
 }
+
+export default userReducer
