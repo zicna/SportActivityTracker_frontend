@@ -1,5 +1,5 @@
 // *react-router components
-import {BrowserRouter as Router}from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 
 import Layout from './pages/Layout'
 import MainHeader from './components/MainHeader'
