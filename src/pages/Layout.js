@@ -9,6 +9,8 @@ import SignIn from "../components/SignIn";
 import PrivateRoute from '../components/routes/PrivateRoute';
 import PublicRoute from "../components/routes/PublicRoute";
 
+// * with switch component we are returning first rout that matches and without it it will run through all routes even if it finds match
+
 // *Importing helper functions
 const Layout = () => {
   return(
