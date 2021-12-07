@@ -8,12 +8,8 @@ import { setUser} from '../redux/actions/UserActions'
 
 class UserContainer extends Component {
   componentDidMount() {
-    fetch(`http://localhost:3001/users/${userId()}`)
-      .then((response) => response.json())
-      .then((data) => {
-          console.log(data)
-          this.props.dispatchSetUser(data)
-        });
+   
+    this.props.dispatchSetUser()
   }
   render() {
     return (
@@ -25,7 +21,7 @@ class UserContainer extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return{
-        dispatchSetUser: (user) => dispatch(setUser(user))
+        dispatchSetUser: () => dispatch(setUser())
     }
 }
 
