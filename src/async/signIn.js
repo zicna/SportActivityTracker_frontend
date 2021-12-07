@@ -1,6 +1,8 @@
 import { login } from '../utilities/index'
 
-const signInURL = "http://localhost:3001/signin";
+// const signInURL = "http://localhost:3001/signin";
+const signInURL = "/signin";
+
 
 const signIn = (obj) => {
   fetch(signInURL, {
