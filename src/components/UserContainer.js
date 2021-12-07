@@ -33,7 +33,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
     // debugger
     return {
-        ...state.userReducer
+        ...state.user
     }
 }
 
