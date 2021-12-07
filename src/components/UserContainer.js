@@ -16,11 +16,10 @@ class UserContainer extends Component {
         });
   }
   render() {
-    return <div>
-        UserOne
-        {/* {this.props.userReducer.first_name} */}
+    return (
+      <div>
         < UserCard user={this.props.user}/>
-    </div>;
+      </div>)
   }
 }
 
@@ -31,7 +30,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
-    // debugger
     return {
         ...state.user
     }

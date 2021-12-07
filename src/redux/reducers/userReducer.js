@@ -1,4 +1,3 @@
-// import { setUser } from '../actions/UserActions'
 
 const defState = {
     user: {},
@@ -14,7 +13,6 @@ function userReducer(state=defState, action){
             return {
                 ...state,
                 user: action.payload
-
             }
 
         default:
