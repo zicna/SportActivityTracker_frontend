@@ -1,11 +1,11 @@
-import { setUser } from '../actions/UserActions'
+// import { setUser } from '../actions/UserActions'
 
 const defState = {
     user: {},
-    weights: [],
-    trening_sessions: [],
-    goal: {},
-    weight_goal: {},
+    // weights: [],
+    // trening_sessions: [],
+    // goal: {},
+    // weight_goal: {},
 }
 
 function userReducer(state=defState, action){
@@ -16,6 +16,7 @@ function userReducer(state=defState, action){
                 user: action.payload
 
             }
+
         default:
             return state
     }

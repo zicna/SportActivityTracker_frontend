@@ -26,6 +26,13 @@ const MainHeader = () => {
                                 Dashboard
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink 
+                            // activeClassName={} 
+                            to="/userone">
+                                User One
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>

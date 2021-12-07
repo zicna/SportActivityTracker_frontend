@@ -15,3 +15,8 @@ export const isLogin = () => {
         return false
     }
 }
+
+// !this might not be needed for final project
+export const userId = () => {
+    return localStorage.getItem(USER_ID)
+}

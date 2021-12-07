@@ -1,10 +1,11 @@
-import React, {Componet} from 'react'
+// import React, { Component } from 'react'
 
 import { Switch} from "react-router-dom";
 
 import Home from "../components/Home";
 import Dashboard from "../components/Dashboard";
 import SignIn from "../components/SignIn";
+import UserContainer from '../components/UserContainer'
 
 import PrivateRoute from '../components/routes/PrivateRoute';
 import PublicRoute from "../components/routes/PublicRoute";
@@ -18,6 +19,7 @@ const Layout = () => {
       <PublicRoute restricted={false} component={Home} path="/" exact />
       <PublicRoute restricted={true} component={SignIn} path="/signin" exact />
       <PrivateRoute component={Dashboard} path="/dashboard" exact />
+      <PublicRoute restricted={false} component={UserContainer} path='/userone' exact />
     </Switch>
   )
 };
